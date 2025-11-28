@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table with 2 Column Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <style>
+    h2 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid my-4">
+    <h2>Table with 2 Column Layout</h2>
+    <div class="row g-4">
+
+      <div class="col-md-6">
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Laptop</td>
+              <td>$999.99</td>
+            </tr>
+            <tr>
+              <td>Smartphone</td>
+              <td>$699.99</td>
+            </tr>
+            <tr>
+              <td>Headphones</td>
+              <td>$129.99</td>
+            </tr>
+            <tr>
+              <td>Keyboard</td>
+              <td>$79.99</td>
+            </tr>
+            <tr>
+              <td>Mouse</td>
+              <td>$49.99</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-6">
+        <div class="fs-3 fw-bold mb-2">Item Summary</div>
+        <div class="fs-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
+
+<!--
+Command-line explanation:
+
+If you change the column class:
+
+1. col-md-6
+   - "md" means medium devices (≥768px).
+   - Columns will be side by side on medium and larger screens.
+   - On smaller screens (<768px), columns stack vertically.
+
+2. col-lg-6
+   - "lg" means large devices (≥992px).
+   - Columns will stack vertically on medium screens (768px–991px).
+   - Side by side only on large (≥992px) and extra large screens.
+
+3. col-sm-6
+   - "sm" means small devices (≥576px).
+   - Columns will be side by side on small, medium, large, and extra large screens.
+   - Only stack on extra small devices (<576px).
+
+Impact:
+- The breakpoint prefix (sm, md, lg) determines at what screen width the column layout applies.
+- Using larger breakpoints delays horizontal alignment to wider screens.
+- Using smaller breakpoints makes the layout side by side even on smaller devices.
+
+-->
